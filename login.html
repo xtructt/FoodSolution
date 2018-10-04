@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="ninodezign.com, ninodezign@gmail.com">
+  <meta name="copyright" content="ninodezign.com"> 
+  <!-- Food solutions meta-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="We selling food">
+	<meta name="author" content="3 + 1 Team RMIT University">
+	<meta name="keywords" content="food, Vietnamese foods, delivery, restaurants near me, fast food, pizza, pho, bun bo hue, best restaurants in Melbourne, Chinese food, Japanese food, best food in Melbourne, lunch, breakfast, meal plans, meal plans for 1 day, meal plans for a week ">
+  <title>Log In</title>
+	
+	<!-- favicon -->
+    <link rel="shortcut icon" href="images/ico/favicon.jpg">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+	<link rel="stylesheet" type="text/css" href="css/unslider.css" />
+	  <link rel="stylesheet" type="text/css" href="css/template.css" />
+	  <link rel="stylesheet" type="text/css" href="css/Team.css" />
+	  <script type="text/javascript">
+	    function pschk() {
+	      var a = document.getElementById("pw").value;
+	      var b = document.getElementById("pw1").value;
+	     if (a == b) {
+	    console.log("match"); } else { alert("Password not match")};
+	    };
+
+
+	  </script>
+	
+</head>
+
+<body data-target="#nino-navbar" data-spy="scroll" >
+
+	<!-- Header
+    ================================================== -->
+	<header id="nino-header">
+		<div id="nino-headerInner">					
+			<nav id="nino-navbar" class="navbar navbar-default" role="navigation">
+				<div class="container">
+
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nino-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">Food Solutions</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="nino-menuItem pull-right">
+						<div class="collapse navbar-collapse pull-left" id="nino-navbar-collapse">
+							<ul class="nav navbar-nav">
+							<?php 
+									include("php/menu.php"); 
+							?>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+						<ul class="nino-iconsGroup nav navbar-nav">
+							<li><a href="cart.html"><i class="mdi mdi-cart-outline nino-icon"></i></a></li>
+							<li><a href="login.html"><i class="mdi mdi-account-outline"></i></a></li>
+              <!--<li><a href="login.html" class="nino-search"><i class="mdi mdi-magnify nino-icon"></i></a></li>-->
+						</ul>
+					</div>
+				</div><!-- /.container-fluid -->
+			</nav>
+
+			
+		</div>
+	</header><!--/#header-->
+
+	<!-- Log In code-->
+
+	<div class="container" style="padding-top:100px;padding-bottom:100px;">
+		<p id="test"></p>
+      <div class="row">
+         <div class="col-md-6 col-md-offset-3">
+         <!-- offset is creatig two side space to central the div tag-->
+         
+         <div class="panel with-nav-tabs panel-info">
+            <div class="panel-heading">
+               <ul class="nav nav-tabs">
+                  <li class="active"><a href="#login" data-toggle="tab"> Login </a></li>
+                  <li><a href="#signup" data-toggle="tab"> Signup </a></li>
+               </ul>
+            </div>
+
+            <div class="panel-body">
+               <div class="tab-content">
+                  <div id="login" class="tab-pane fade in active register">
+                     <div class="container-fluid">
+                        <div class="row">
+                        	<form>
+                              <h2 class="text-center" style="color: #5cb85c;"> <strong> Login  </strong></h2><hr />
+
+                              <div class="row">
+                                 <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="form-group">
+                                       <div class="input-group">
+                                          <div class="input-group-addon">
+                                             <span class="glyphicon glyphicon-user"></span>
+                                          </div>
+                                          <input type="text" id="un" placeholder="User Name" class="form-control">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="row">
+                                 <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="form-group">
+                                       <div class="input-group">
+                                          <div class="input-group-addon">
+                                             <span class="glyphicon glyphicon-lock"></span>
+                                          </div>
+
+                                          <input type="password" placeholder="Password" id="p" class="form-control">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="col-xs-12 col-sm-12 col-md-12">
+                                 <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                       <input type="checkbox" name="check" checked> Remember Me
+                                    </div>
+                                 </div>
+
+                                  <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                       <a href="#forgot" data-toggle="modal"> Forgot Password? </a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <hr />
+                              <div class="row">
+                                 <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <button class="btn btn-success btn-block btn-lg" onclick="checking(un,p)"> Login </button>
+                                 </div>
+                              </div>
+							</form>
+                        </div>
+                     </div> 
+                  </div>
+
+                  <div id="signup" class="tab-pane fade">
+                  <form id="registerform" onsubmit="storing(tname,pw)"> 
+                     <div class="container-fluid">
+                        <div class="row">
+                              <h2 class="text-center" style="color: #f0ad4e;"> <Strong> Register </Strong></h2> <hr />
+                                 <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                       <div class="form-group">
+                                          <div class="input-group">
+                                             <div class="input-group-addon iga1">
+                                                <span class="glyphicon glyphicon-user"></span>
+                                             </div>
+
+
+                                             <input type="text" class="form-control" placeholder="Enter User Name" name="name" id="tname" required>
+
+
+
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                       <div class="form-group">
+                                          <div class="input-group">
+                                             <div class="input-group-addon iga1">
+                                                <span class="glyphicon glyphicon-envelope"></span>
+                                             </div>
+                                             <input type="email" class="form-control" placeholder="Enter E-Mail" name="mail" id="temail" required>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                       <div class="form-group">
+                                          <div class="input-group">
+                                             <div class="input-group-addon iga1">
+                                                <span class="glyphicon glyphicon-lock"></span>
+                                             </div>
+
+
+                                             <input type="password" class="form-control" placeholder="Enter Password" name="pass" id="pw" required>
+
+
+
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                       <div class="form-group">
+                                          <div class="input-group">
+                                             <div class="input-group-addon iga1">
+                                                <span class="glyphicon glyphicon-lock"></span>
+                                             </div>
+
+
+                                             <input type="password" class="form-control" placeholder="Re-enter Password" name="pass" id="pw1" onblur="pschk(pw,pw1)" required>
+
+
+
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <hr>
+                                 <h2 class="text-center" style="color: #f0ad4e;"> <Strong> Delivery </Strong></h2> 
+
+                                  <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                       <div class="form-group">
+                                          <div class="input-group">
+                                             <div class="input-group-addon iga1">
+                                                <span class="glyphicon glyphicon-home"></span>
+                                             </div>
+
+
+                                             <input type="text" class="form-control" placeholder="Enter Your address" name="" id="tadress1" required>
+
+
+
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                       <div class="form-group">
+                                          <div class="input-group">
+                                             <div class="input-group-addon iga1">
+                                                <span class="glyphicon glyphicon-home"></span>
+                                             </div>
+
+
+                                             <input type="text" class="form-control" placeholder="Enter Your Surburb" name="" id="tsurburb1" required>
+
+
+
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                   <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                       <div class="form-group">
+                                          <div class="input-group">
+                                             <div class="input-group-addon iga1">
+                                                <span class="glyphicon glyphicon-home"></span>
+                                             </div>
+
+
+                                             <input type="text" class="form-control" placeholder="Enter Your State" name="pass" id="tstate1" style="text-transform:uppercase" required>
+
+
+
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                       <div class="form-group">
+                                          <div class="input-group">
+                                             <div class="input-group-addon iga1">
+                                                <span class="glyphicon glyphicon-home"></span>
+                                             </div>
+
+
+                                             <input type="text" class="form-control" maxlength="3" placeholder="Enter Your Postcode" name="pass" id="tpost1" required>
+
+
+
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                       <div class="form-group">
+                                          <div class="input-group">
+                                             <div class="input-group-addon iga1">
+                                                <span class="glyphicon glyphicon-home"></span>
+                                             </div>
+
+
+                                             <input type="text" id="tphone1" maxlength="11" class="form-control" placeholder="Enter Your Phone Number" name="pass" required>
+
+
+
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+
+                                 <hr>
+                                 <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                       <div class="form-group">
+                                          <input id="btn register" type="submit" value="Register" class="btn btn-lg btn-block btn-warning" onsubmit="storing(tname,pw)">
+                                          <!-- <button type="submit" class="btn btn-lg btn-block btn-warning" onclick="storing(tname,pw)"> Register</button> -->
+                                          
+                                       </div>
+                                    </div>
+                                 </div>
+                             </div>
+                     </div>
+                	 </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+   <div class="modal fade" id="forgot">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss='modal' aria-hidden="true"><span class="glyphicon glyphicon-remove"></span></button>
+               <h4 class="modal-title" style="font-size: 32px; padding: 12px;"> Recover Your Password </h4>
+            </div>
+
+            <div class="modal-body">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group">
+                           <div class="input-group">
+                              <div class="input-group-addon iga2">
+                                 <span class="glyphicon glyphicon-envelope"></span>
+                              </div>
+                              <input type="email" class="form-control" placeholder="Enter Your E-Mail ID" name="email">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="row">
+                     <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group">
+                           <div class="input-group">
+                              <div class="input-group-addon iga2">
+                                 <span class="glyphicon glyphicon-lock"></span>
+                              </div>
+                              <input type="password" class="form-control" placeholder="Enter Your New Password" name="newpwd">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="modal-footer">
+               <div class="form-group">
+                  <button type="submit" class="btn btn-lg btn-info"> Save <span class="glyphicon glyphicon-saved"></span></button>
+
+                  <button type="button" data-dismiss="modal" class="btn btn-lg btn-default"> Cancel <span class="glyphicon glyphicon-remove"></span></button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+	
+    <!-- Footer
+    ================================================== -->
+    <footer id="footer">
+     <?php 
+			include("php/footer.php"); 
+		?>
+    </footer><!--/#footer-->
+
+    <!-- Search Form - Display when click magnify icon in menu
+    ================================================== -->
+    <form action="" id="nino-searchForm">
+    	<input type="text" placeholder="Search..." class="form-control nino-searchInput">
+    	<i class="mdi mdi-close nino-close"></i>
+    </form><!--/#nino-searchForm-->
+	
+    <!-- Scroll to top
+    ================================================== -->
+	<a href="#" id="nino-scrollToTop">Go to Top</a>
+	
+	<!-- javascript -->
+	
+    <script type="text/javascript" src="js/3+1script.js"></script> 
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.97074.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="js/unslider-min.js"></script>
+	<script type="text/javascript" src="js/template.js"></script>
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- css3-mediaqueries.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+	    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+		
+</body>
+</html>

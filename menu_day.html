@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="ninodezign.com, ninodezign@gmail.com">
+	<meta name="copyright" content="ninodezign.com">
+	<!-- Food solutions meta-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="We selling food">
+	<meta name="author" content="3 + 1 Team RMIT University">
+	<meta name="keywords" content="food, Vietnamese foods, delivery, restaurants near me, fast food, pizza, pho, bun bo hue, best restaurants in Melbourne, Chinese food, Japanese food, best food in Melbourne, lunch, breakfast, meal plans, meal plans for 1 day, meal plans for a week ">
+	<title>Menu for a Day</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="images/ico/favicon.jpg">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+	<link rel="stylesheet" type="text/css" href="css/unslider.css" />
+	<link rel="stylesheet" type="text/css" href="css/template.css" />
+	<link rel="stylesheet" type="text/css" href="css/Team.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> 
+
+</head>
+
+<!--<iframe src="relative link"></iframe>-->
+
+<body data-target="#nino-navbar" data-spy="scroll">
+
+	<!-- Header
+    ================================================== -->
+	<header id="nino-header">
+		<div id="nino-headerInner">
+			<nav id="nino-navbar" class="navbar navbar-default" role="navigation">
+				<div class="container">
+
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nino-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">Food Solutions</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="nino-menuItem pull-right">
+						<div class="collapse navbar-collapse pull-left" id="nino-navbar-collapse">
+							<ul class="nav navbar-nav">
+								<?php
+										include("php/menu.php"); 
+								?>
+
+							</ul>
+						</div>
+						<!-- /.navbar-collapse -->
+						<ul class="nino-iconsGroup nav navbar-nav">
+							<li><a href="cart.html"><i class="mdi mdi-cart-outline nino-icon"></i></a></li>
+							<li><a href="login.html"><i class="mdi mdi-account-outline"></i></a></li>
+							<!--<li><a href="login.html" class="nino-search"><i class="mdi mdi-magnify nino-icon"></i></a></li>-->
+						</ul>
+					</div>
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+
+			<section id="nino-slider" class="carousel slide container" data-ride="carousel">
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<h2 class="nino-sectionHeading">
+							<span class="nino-subHeading">Food Solutions</span> Menu
+						</h2>
+
+					</div>
+
+				</div>
+			</section>
+		</div>
+	</header>
+	<!--/#header-->
+
+	<!--	Main content-->
+	<!--<?php
+			$PC=$_POST["result"];
+
+			echo "Location is: " . $PC;
+	?> -->
+
+
+	<div class="container">
+		<div class="row headthing">
+			<br/>
+			<!-- menu contain warp -->
+			<!-- menu offer -->
+			<div class="col-md-9 menublock" data-toggle="tooltip" title="You can click on the food to select it !!! Easy">
+				<script>
+				document.write("<h7><b>Location is:" +sessionStorage.place+"</b></h7>");
+				</script>
+
+				<h6><strong>Your results - All Day Meal Plan</strong></h6>
+				<br/>
+				<div class="row foodinfo ">
+					<div class="col-md-3">
+						<!-- Image -->
+						<img src="images/food/food-1.jpg" alt="food" class="imgmenu">
+					</div>
+					<div class="col-md-9 foodcontent">
+						<!-- Information -->
+						<h7><b>PHO BO (Vietnamese Beef Noodles)</b></h7><br/>
+						<p><i>Option for your<b> breakfast </b></i><br/>
+						Bacon ipsum dolor amet sirloin turkey shank venison flank jowl. Pastrami meatball alcatra, jowl strip steak shank hamburger short ribs. Landjaeger meatloaf beef ribs pork chop. Pork chop pork filet mignon ground round pork loin short ribs picanha burgdoggen.</p>
+					<p>Price:<span class="Price"> 12</span></p>
+					</div>
+				</div>
+				<div class="row foodinfo">
+					<div class="col-md-3">
+						<!-- Image -->
+						<img class="imgmenu" src="images/food/food-7.jpg">
+					</div>
+					<div class="col-md-9 foodcontent">
+						<h7><b>COM TAM (Vietnamese Rice)</b></h7><br/>
+						<p><i>Option for your<b> breakfast </b></i><br/>
+						Bacon ipsum dolor amet sirloin turkey shank venison flank jowl. Pastrami meatball alcatra, jowl strip steak shank hamburger short ribs. Landjaeger meatloaf beef ribs pork chop. Pork chop pork filet mignon ground round pork loin short ribspicanha burgdoggen.</p>
+					<p>Price:<span class="Price"> 15</span></p>
+					</div>
+				</div>
+				<div class="row foodinfo">
+					<div class="col-md-3">
+						<img class="imgmenu" src="images/food/food-20.jpg">
+					</div>
+					<div class="col-md-9 foodcontent">
+						<h7><b>Fish and Chips (w/ Tartar sauce)</b></h7><br/>
+						<p><i>Option for your<b> breakfast </b></i><br/>
+						Bacon ipsum dolor amet sirloin turkey shank venison flank jowl. Pastrami meatball alcatra, jowl strip steak shank hamburger short ribs. Landjaeger meatloaf beef ribs pork chop. Pork chop pork filet mignon ground round pork loin short ribspicanha burgdoggen.</p>
+					<p>Price:<span class="Price"> 11</span></p>
+					</div>
+				</div>
+				<div class="row foodinfo">
+					<div class="col-md-3">
+						<img class="imgmenu" src="images/food/food-16.jpg">
+					</div>
+					<div class="col-md-9 foodcontent">
+						<h7><b>Avocado Bacon Crustless Quiche</b></h7><br/>
+						<p><i>Option for your<b> lunch </b></i><br/>
+						Bacon ipsum dolor amet sirloin turkey shank venison flank jowl. Pastrami meatball alcatra, jowl strip steak shank hamburger short ribs. Landjaeger meatloaf beef ribs pork chop. Pork chop pork filet mignon ground round pork loin short ribspicanha burgdoggen.</p>
+					<p>Price:<span class="Price"> 15</span></p>
+					</div>
+				</div>
+				<div class="row foodinfo">
+					<div class="col-md-3">
+						<img class="imgmenu" src="images/food/food-12.jpg">
+					</div>
+					<div class="col-md-9 foodcontent">
+						<h7><b>Grilled Chicken Caesar Salad</b></h7><br>
+						<p><i>Option for your<b> lunch </b></i><br/>
+						Bacon ipsum dolor amet sirloin turkey shank venison flank jowl. Pastrami meatball alcatra, jowl strip steak shank hamburger short ribs. Landjaeger meatloaf beef ribs pork chop. Pork chop pork filet mignon ground round pork loin short ribspicanha burgdoggen.</p>
+						<p>Price:<span class="Price"> 12</span></p>
+					</div>
+				</div>
+				<div class="row foodinfo">
+					<div class="col-md-3">
+						<img class="imgmenu" src="images/food/food-28.jpg">
+					</div>
+					<div class="col-md-9 foodcontent">
+						<h7><b>Fruit Salad (w/ Yogurt)</b></h7><br>
+						<p><i>Option for your<b> lunch </b></i><br/>
+						Bacon ipsum dolor amet sirloin turkey shank venison flank jowl. Pastrami meatball alcatra, jowl strip steak shank hamburger short ribs. Landjaeger meatloaf beef ribs pork chop. Pork chop pork filet mignon ground round pork loin short ribspicanha burgdoggen.</p>
+						<p>Price:<span class="Price"> 10</span></p>
+					</div>
+				</div>
+				<div class="row foodinfo">
+					<div class="col-md-3">
+						<img class="imgmenu" src="images/food/food-50.jpg">
+					</div>
+					<div class="col-md-9 foodcontent">
+						<h7><b>Lobster With Pasta and Mint</b></h7><br>
+						<p><i>Option for your<b> dinner </b></i><br/>
+						Bacon ipsum dolor amet sirloin turkey shank venison flank jowl. Pastrami meatball alcatra, jowl strip steak shank hamburger short ribs. Landjaeger meatloaf beef ribs pork chop. Pork chop pork filet mignon ground round pork loin short ribspicanha burgdoggen.</p>
+						<p>Price:<span class="Price"> 17</span></p>
+					</div>
+				</div>
+				<div class="row foodinfo">
+					<div class="col-md-3">
+						<img class="imgmenu" src="images/food/img-6.jpg">
+					</div>
+					<div class="col-md-9 foodcontent">
+						<h7><b>Grilled Salmon (w/Rockets, Avocado and Pine Nuts) Salad</b></h7><br>
+						<p><i>Option for your<b> dinner </b></i><br/>
+						Bacon ipsum dolor amet sirloin turkey shank venison flank jowl. Pastrami meatball alcatra, jowl strip steak shank hamburger short ribs. Landjaeger meatloaf beef ribs pork chop. Pork chop pork filet mignon ground round pork loin short ribspicanha burgdoggen.</p>
+						<p>Price:<span class="Price"> 17</span></p>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="col-md-2">
+				<form action="cart.html" method="POST">
+				<h6><strong>Delivery options</strong></h6>
+			
+				<div class="menusubhead">Your order</div>
+				<!-- <a href="cart.html">Click Me</a> -->
+				<ul class="choosefoods"></ul>
+				<!-- Link to cart <a href="Cart.html">Checkkkkkk</a> -->
+
+				<br />
+
+				<div class="menusubhead">Pick Up</div>
+				<div class="leftmenucontent">
+					<lable><input name="Pickup"  type="radio"> Home</lable><br>
+					<lable><input name="Pickup" type="radio"> Current Location</lable>
+				</div>
+
+				<strong>Gift Code</strong>
+				<input type="text" class="form-control"></input>
+
+				<br />
+				
+				<strong>TOTAL: </strong>  <span class="Total"></span>
+				<br />
+				<br />
+				<button type="submit"><a href="cart.html" class="InheritColor"><i class="mdi mdi-cart-outline nino-icon"></i></a></button>
+			</form>
+
+				
+			</div>
+		</div>
+	</div>
+</body>
+
+
+		<!-- Footer
+    ================================================== -->
+		<footer id="footer">
+		<?php
+	     	include("php/footer.php"); 
+	    ?>
+		</footer>
+		<!--/#footer-->
+
+		<!-- Search Form - Display when click magnify icon in menu
+    ================================================== -->
+		<form action="" id="nino-searchForm">
+			<input type="text" placeholder="Search..." class="form-control nino-searchInput">
+			<i class="mdi mdi-close nino-close"></i>
+		</form>
+		<!--/#nino-searchForm-->
+
+		<!-- Scroll to top
+    ================================================== -->
+		<a href="#" id="nino-scrollToTop">Go to Top</a>
+
+		<!-- javascript -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		    crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/3+1script.js"></script>
+		<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+		<script type="text/javascript" src="js/modernizr.custom.97074.js"></script>
+		<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script type="text/javascript" src="js/unslider-min.js"></script>
+		<script type="text/javascript" src="js/template.js"></script>
+
+
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+		<!-- css3-mediaqueries.js for IE less than 9 -->
+		<!--[if lt IE 9]>
+	    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+</body>
+
+</html>
